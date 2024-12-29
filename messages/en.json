@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "partners": "Partners",
+    "sponsors": "Sponsors",
+    "education": "Education",
+    "contact": "Contact",
+    "join": "Join Us"
+  },
+  "hero": {
+    "title": "Student Scientific Organization",
+    "subtitle": "Advancing science through student collaboration and research",
+    "buttons": {
+      "projects": "Our Projects",
+      "contact": "Contact Us"
+    }
+  },
+  "sections": {
+    "about": {
+      "title": "About Us",
+      "description": "We are a passionate group of student scientists dedicated to advancing research and innovation. Our organization fosters collaboration, encourages curiosity, and promotes scientific excellence among students across various disciplines.",
+      "button": "Learn More About Us"
+    },
+    "scientificResources": {
+      "title": "Scientific Resources",
+      "description": "We are committed to sharing scientific knowledge and research materials. Explore our collection of academic papers, research findings, and educational resources.",
+      "button": "Browse Resources",
+      "pageTitle": "Scientific Resources Collection",
+      "pageDescription": "Here you can find a curated collection of scientific materials, research papers, and educational resources developed by our Student Scientific Organization."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "We collaborate with leading academic institutions and research centers to drive scientific progress."
+    },
+    "sponsors": {
+      "title": "Our Sponsors",
+      "subtitle": "We are grateful to our sponsors who support our research and innovation initiatives."
+    },
+    "extendedAbout": {
+      "title": "About Student Scientific Organization",
+      "mission": {
+        "title": "Our Mission",
+        "description1": "The Student Scientific Organization is dedicated to fostering a community of young researchers, innovators, and science enthusiasts. Our mission is to provide a platform for students to explore their scientific interests, collaborate on cutting-edge projects, and develop skills that will shape the future of scientific discovery.",
+        "description2": "We believe in the power of interdisciplinary collaboration and strive to create an environment where students from various fields can come together to tackle complex scientific challenges. Through our projects, workshops, and events, we aim to bridge the gap between academic learning and real-world scientific application."
+      },
+      "team": {
+        "title": "Our Team",
+        "description": "Our organization is made up of dedicated students from diverse academic backgrounds. Each semester, we come together to push the boundaries of scientific research and innovation. Below you can see our team photos from recent semesters.",
+        "semesters": {
+          "fall2023": "Fall 2023",
+          "spring2023": "Spring 2023",
+          "fall2022": "Fall 2022"
+        }
+      },
+      "backButton": "Back to Home"
+    },
+    "projects": {
+      "title": "Our Projects",
+      "subtitle": "Explore our cutting-edge research initiatives that are shaping the future of science and technology.",
+      "viewProject": "View Project",
+      "backToProjects": "Back to Projects",
+      "projectDetails": "Project Details",
+      "projectGallery": "Project Gallery",
+      "projectCollaborators": "Project Collaborators",
+      "projectSponsors": "Project Sponsors",
+      "projects": {
+        "quantum": {
+          "title": "Quantum Computing Research",
+          "description": "Exploring the frontiers of quantum computing to revolutionize data processing and cryptography.",
+          "fullDescription": "Our quantum computing research project aims to develop novel algorithms and hardware solutions to advance the field of quantum information processing. We're working on improving qubit coherence times, error correction techniques, and quantum circuit optimization."
+        },
+        "energy": {
+          "title": "Sustainable Energy Solutions",
+          "description": "Developing innovative approaches to renewable energy for a cleaner, greener future.",
+          "fullDescription": "In our sustainable energy project, we're focusing on improving the efficiency of solar cells, developing new energy storage technologies, and creating smart grid solutions for better energy distribution and management."
+        },
+        "ai": {
+          "title": "AI in Healthcare",
+          "description": "Applying artificial intelligence to improve medical diagnostics and patient care.",
+          "fullDescription": "Our AI in healthcare project leverages machine learning and deep learning techniques to enhance medical image analysis, predict disease progression, and assist in personalized treatment planning. We're collaborating with medical professionals to ensure our solutions have real-world impact."
+        },
+        "nano": {
+          "title": "Nanotechnology Innovations",
+          "description": "Advancing materials science at the nanoscale to create revolutionary new products.",
+          "fullDescription": "Our nanotechnology research focuses on developing new materials and applications at the molecular level, enabling breakthroughs in medicine, electronics, and environmental protection."
+        },
+        "space": {
+          "title": "Space Exploration Technologies",
+          "description": "Developing next-generation spacecraft and propulsion systems for interplanetary travel.",
+          "fullDescription": "We're working on innovative propulsion technologies and spacecraft designs to enable deeper space exploration and advance our understanding of the cosmos."
+        },
+        "biotech": {
+          "title": "Biotechnology Breakthroughs",
+          "description": "Harnessing the power of biology to solve global challenges in health and agriculture.",
+          "fullDescription": "Our biotechnology research aims to develop new solutions for healthcare, agriculture, and environmental challenges through innovative biological approaches."
+        }
+      },
+      "learnMore": "Learn More"
+    },
+    "contact": {
+      "title": "Connect with Our Team",
+      "subtitle": "Reach Us",
+      "description": "We'd love to hear from you. Reach out through any of these channels.",
+      "social": {
+        "instagram": {
+          "label": "Instagram",
+          "description": "Follow us for updates",
+          "handle": "@nami.pwr"
+        },
+        "facebook": {
+          "label": "Facebook",
+          "description": "Join our community",
+          "handle": "KN NaMi"
+        },
+        "email": {
+          "label": "Email",
+          "description": "Get in touch with us",
+          "handle": "kn.nami@pwr.edu.pl"
+        }
+      }
+    },
+    "joinUs": {
+      "title": "Join Our Scientific Community",
+      "subtitle": "Be part of groundbreaking research and innovation",
+      "successMessage": "Thank you for your application! We'll be in touch soon.",
+      "form": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email address"
+        },
+        "field": {
+          "label": "Field of Study/Research",
+          "placeholder": "Select your field",
+          "options": {
+            "physics": "Physics",
+            "chemistry": "Chemistry",
+            "biology": "Biology",
+            "engineering": "Engineering",
+            "computerScience": "Computer Science",
+            "mathematics": "Mathematics",
+            "other": "Other"
+          }
+        },
+        "experience": {
+          "label": "Experience Level",
+          "options": {
+            "student": "Student (Bachelor's/Master's)",
+            "graduate": "Graduate Student (PhD)",
+            "professional": "Professional/Post-doc"
+          }
+        },
+        "motivation": {
+          "label": "Motivation",
+          "placeholder": "Tell us why you want to join and what you hope to contribute..."
+        },
+        "submit": "Submit Application",
+        "submitting": "Submitting..."
+      }
+    }
+  },
+  "footer": {
+    "description": "Advancing science through student collaboration and research",
+    "navigation": "Navigation",
+    "connectWithUs": "Connect With Us",
+    "social": {
+      "instagram": {
+        "label": "Instagram",
+        "description": "Follow us for updates",
+        "handle": "@nami.pwr"
+      },
+      "facebook": {
+        "label": "Facebook",
+        "description": "Join our community",
+        "handle": "KN NaMi"
+      },
+      "email": {
+        "label": "Email",
+        "description": "Get in touch with us",
+        "handle": "kn.nami@pwr.edu.pl"
+      }
+    }
+  }
+}
