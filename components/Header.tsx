@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
@@ -28,26 +29,42 @@ const languages = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const { language, setLanguage } = useLanguageStore()
+  const router = useRouter()
   const t = useTranslations()
 
   const navItems = [
     { name: t('nav.about'), href: '/#about' },
     { name: t('nav.projects'), href: '/#projects' },
     { name: t('nav.partners'), href: '/#partners' },
-    { name: t('nav.education'), href: '/#education' },
     { name: t('nav.contact'), href: '/#contact' },
   ]
 
-  const handleScroll = (e: React.MouseEvent, href: string) => {
+  const handleScroll = async (e: React.MouseEvent, href: string) => {
     e.preventDefault()
     const targetId = href.replace('/#', '')
-    const targetElement = document.getElementById(targetId)
     
-    if (targetElement) {
-      targetElement.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      })
+    // If we're not on the homepage, navigate to homepage first
+    if (window.location.pathname !== '/') {
+      await router.push('/')
+      // Small delay to ensure the page has loaded
+      setTimeout(() => {
+        const targetElement = document.getElementById(targetId)
+        if (targetElement) {
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }
+      }, 100)
+    } else {
+      // If we're already on homepage, just scroll
+      const targetElement = document.getElementById(targetId)
+      if (targetElement) {
+        targetElement.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
     }
     
     setIsOpen(false)
@@ -59,8 +76,8 @@ export default function Header() {
 
   return (
     <header className="w-full border-b border-gray-200">
-      <div className="container flex items-center justify-between py-4 mx-auto container">
-        <Link href="/" className="flex items-center space-x-2">
+      <div className="container flex items-center justify-between mx-auto">
+        <Link href="/" className="flex items-center space-x-2 p-4">
             <span className="sr-only">KN NaMi</span>
             <img
                 src="/logo/logo_dark.svg"
@@ -83,8 +100,8 @@ export default function Header() {
           </nav>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Globe className="h-4 w-4" />
+              <Button variant="ghost" size="icon" className="h-10 w-10">
+                <Globe className="h-5 w-5" />
                 <span className="sr-only">Switch language</span>
               </Button>
             </DropdownMenuTrigger>
@@ -103,8 +120,12 @@ export default function Header() {
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="md:hidden p-3"
+            >
+              <Menu className="h-8 w-8" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>

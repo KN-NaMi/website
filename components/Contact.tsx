@@ -3,7 +3,6 @@
 import { Instagram, Facebook, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslations } from '@/hooks/useTranslations'
-// import { useScrollAnimation } from '@/hooks/useScrollAnimation' // Removed
 import { cn } from '@/lib/utils'
 
 const contactInfo = [
@@ -34,8 +33,8 @@ export default function Contact() {
         "py-32 bg-white"
       )}
     >
-      <div className="container px-4 md:px-6 mx-auto container">
-        <div className="mb-14">
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="mb-14 text-center">
           <span className="text-sm font-semibold text-gray-600">{t('sections.contact.subtitle')}</span>
           <h2 className="mb-3 mt-1 text-balance text-3xl font-semibold md:text-4xl text-[#081F3E]">
             {t('sections.contact.title')}
@@ -48,9 +47,9 @@ export default function Contact() {
           {contactInfo.map((item, index) => (
             <div 
               key={item.type}
-              className=""
+              className="flex flex-col items-center text-center"
             >
-              <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-gray-100">
+              <span className="mb-3 flex size-12 items-center justify-center rounded-full bg-gray-100">
                 <item.icon className="h-6 w-auto text-[#081F3E]" />
               </span>
               <p className="mb-2 text-lg font-semibold text-[#081F3E]">
