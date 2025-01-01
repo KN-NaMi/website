@@ -86,8 +86,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   return (
     <div className="min-h-screen bg-white ">
       <main>
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 mx-auto container">
-          <div className="container px-4 md:px-6 ">
+        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 mx-auto container">
+          <div className="container px-4 md:px-6 pt-8">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-[#081F3E]">
@@ -98,7 +98,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 </p>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                <Button asChild className="bg-black text-white hover:bg-black/90">
+                {/* <Button asChild className="bg-black text-white hover:bg-black/90">
                   <Link href="/#projects">{t('sections.projects.backToProjects')}</Link>
                 </Button>
                 <Button asChild variant="outline" className="text-black hover:text-black/90">
@@ -120,13 +120,13 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
                   </Button>
-                )}
+                )} */}
               </div>
             </div>
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 ">
+        <section className="w-full py-12 md:py-24 lg:py-20 bg-gray-50 ">
           <div className="container px-4 md:px-6 mx-auto container">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl text-[#081F3E] mb-4">
               {t('sections.projects.projectDetails')}

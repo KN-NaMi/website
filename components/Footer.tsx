@@ -47,7 +47,12 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="flex flex-col items-center">
             <Link href="/" className="text-2xl font-bold text-[#081F3E]">
-              SSO
+            <span className="sr-only">KN NaMi</span>
+            <img
+                src="/logo/logo_dark.svg"
+                alt="KN NaMi"
+                className="h-[4rem] w-[4rem]"
+            />
             </Link>
             <p className="mt-1 text-sm text-gray-600">
               {t('footer.description')}
