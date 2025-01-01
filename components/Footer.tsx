@@ -8,8 +8,6 @@ const navLinks = [
   { name: 'nav.about', href: '/#about' },
   { name: 'nav.projects', href: '/#projects' },
   { name: 'nav.partners', href: '/#partners' },
-  { name: 'nav.sponsors', href: '/#sponsors' },
-  { name: 'nav.education', href: '/#education' },
   { name: 'nav.contact', href: '/#contact' },
 ]
 
