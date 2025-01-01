@@ -17,6 +17,12 @@
     }
   },
   "sections": {
+    "hero": {
+      "title": "Exploring Micro and Nano Worlds with NaMi",
+      "description": "Discover the fascinating world of microscopic and nanoscale phenomena through cutting-edge research and innovation.",
+      "button": "Our Projects",
+      "backgroundAlt": "Hero Background"
+    },
     "about": {
       "title": "About Us",
       "description": "We are a passionate group of student scientists dedicated to advancing research and innovation. Our organization fosters collaboration, encourages curiosity, and promotes scientific excellence among students across various disciplines.",

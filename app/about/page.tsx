@@ -59,12 +59,6 @@ export default function ExtendedAboutPage() {
             ))}
           </div>
         </section>
-
-        <Button asChild>
-          <Link href="/#about">
-            {t('sections.extendedAbout.backButton')}
-          </Link>
-        </Button>
       </main>
     </div>
   )

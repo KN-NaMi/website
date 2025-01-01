@@ -17,6 +17,12 @@
       }
     },
     "sections": {
+      "hero": {
+        "title": "Odkrywamy Mikro i Nanoświaty z NaMi",
+        "description": "Poznaj fascynujący świat zjawisk mikroskopowych i nanoskali dzięki nowoczesnym badaniom i innowacjom.",
+        "button": "Nasze Projekty",
+        "backgroundAlt": "Tło Bohatera"
+      },
       "about": {
         "title": "O nas",
         "description": "Jesteśmy grupą zaangażowanych studentów-naukowców, którzy poświęcają się rozwojowi badań i innowacji. Nasza organizacja wspiera współpracę, zachęca do ciekawości i promuje doskonałość naukową wśród studentów różnych dyscyplin.",
