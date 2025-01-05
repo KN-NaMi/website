@@ -25,7 +25,7 @@
       },
       "about": {
         "title": "O nas",
-        "description": "Jesteśmy grupą zaangażowanych studentów-naukowców, którzy poświęcają się rozwojowi badań i innowacji. Nasza organizacja wspiera współpracę, zachęca do ciekawości i promuje doskonałość naukową wśród studentów różnych dyscyplin.",
+        "description": "Koło Naukowe NaMi to zrzeszenie studentów pasjonujących się Nano- i Mikroelektroniką, działające przy Katedrze Mikroelektroniki i Nanotechnologii Politechniki Wrocławskiej.",
         "button": "Dowiedz się więcej"
       },
       "scientificResources": {
@@ -37,18 +37,18 @@
       },
       "partners": {
         "title": "Nasi Partnerzy",
-        "subtitle": "Współpracujemy z wiodącymi instytucjami akademickimi i ośrodkami badawczymi, aby napędzać postęp naukowy."
+        "subtitle": "Zapraszamy  do współpracy  z Naszym kołem, aby wspólnie myśleć nad nowatorskimi projektami w obszarze półprzewodników i mikrostruktur, tworząc rozwiązania napędzające rozwój nowoczesnych technologii."
       },
       "sponsors": {
         "title": "Nasi Sponsorzy",
         "subtitle": "Jesteśmy wdzięczni naszym sponsorom, którzy wspierają nasze inicjatywy badawcze i innowacyjne."
       },
       "extendedAbout": {
-        "title": "O Studenckiej Organizacji Naukowej",
+        "title": "O Nas",
         "mission": {
           "title": "Nasza Misja",
-          "description1": "Studencka Organizacja Naukowa jest dedykowana budowaniu społeczności młodych badaczy, innowatorów i entuzjastów nauki. Naszą misją jest zapewnienie platformy dla studentów do eksploracji ich naukowych zainteresowań, współpracy przy nowatorskich projektach i rozwijania umiejętności, które będą kształtować przyszłość odkryć naukowych.",
-          "description2": "Wierzymy w siłę współpracy interdyscyplinarnej i dążymy do stworzenia środowiska, w którym studenci z różnych dziedzin mogą się spotkać, aby stawić czoła złożonym wyzwaniom naukowym. Poprzez nasze projekty, warsztaty i wydarzenia, dążymy do zniwelowania przepaści między nauką akademicką a praktycznym zastosowaniem."
+          "description1": "Głównym celem koła jest wspieranie rozwoju wiedzy, zwiększanie zainteresowania tematyką półprzewodników, a także propagowanie zdobytej wiedzy wśród innych studentów i osób zainteresowanych tą dynamicznie rozwijającą się dziedziną.",
+          "description2": "Nasi członkowie mają unikalną możliwość zgłębiania zagadnień związanych z półprzewodnikami, takich jak wytwarzanie struktur, ich analiza oraz praktyczne zastosowania w systemach elektronicznych."
         },
         "team": {
           "title": "Nasz Zespół",
@@ -72,14 +72,14 @@
         "projectSponsors": "Sponsorzy Projektu",
         "projects": {
           "quantum": {
-            "title": "Badania nad Komputerami Kwantowymi",
-            "description": "Eksploracja granic obliczeń kwantowych w celu rewolucjonizacji przetwarzania danych i kryptografii.",
-            "fullDescription": "Nasz projekt badawczy nad komputerami kwantowymi ma na celu opracowanie nowych algorytmów i rozwiązań sprzętowych, aby rozwinąć dziedzinę przetwarzania informacji kwantowej. Pracujemy nad poprawą czasów koherencji kubitów, technikami korekcji błędów i optymalizacją obwodów kwantowych."
+            "title": "Stanowisko fotolitograficzne",
+            "description": "Projekt realizowany we współpracy z uczelniami z Ameryki, obejmujący interdyscyplinarne dziedziny, takie jak elektronika, optyka, mechanika i programowanie.",
+            "fullDescription": "Stanowisko do fotolitografii jest flagowym projektem naszego koła, ponieważ nie tylko idealnie wpisuje się w obszar naszych zainteresowań, ale również może stać się kluczowym narzędziem do dalszego rozwoju w kierunku mikrosystemów. Projekt ma umożliwiać tworzenie masek fotolitograficznych o rozdzielczości do 5 µm, stanowiących kluczowy element w wytwarzaniu mikrostruktur. Głównym elementem systemu będzie projektor wyposażony w źródło światła ultrafioletowego, które dzięki specjalistycznemu układowi optycznemu będzie odpowiednio skalowane i emitowane na przygotowane powierzchnie. Manipulatory o wysokiej dokładności dopełnią ten precyzyjny system. Stanowisko stanowić będzie doskonałe połączenie nowatorskiej myśli inżynierskiej i praktycznego podejścia do współczesnych wyzwań technologicznych."
           },
           "energy": {
-            "title": "Rozwiązania Energii Odnawialnej",
-            "description": "Rozwijanie innowacyjnych podejść do energii odnawialnej dla czystszej, bardziej ekologicznej przyszłości.",
-            "fullDescription": "W naszym projekcie energii odnawialnej skupiamy się na poprawie wydajności ogniw słonecznych, opracowywaniu nowych technologii magazynowania energii i tworzeniu inteligentnych rozwiązań sieciowych dla lepszej dystrybucji i zarządzania energią."
+            "title": "Stanowisko do pomiarów ostrzowych",
+            "description": "Stanowisko do pomiarów ostrzowych to zaawansowane urządzenie pozwalające na szczegółową analizę właściwości elektrycznych półprzewodników, mikrostruktur oraz cienkowarstwowych materiałów.",
+            "fullDescription": "Kluczowym elementem systemu są precyzyjne ostrza pomiarowe – cienkie kontakty igłowe umożliwiające kontakt z badanym obiektem na poziomie mikrometrowym. Stanowisko wykorzystuje zasilacz SMU (Source Measure Unit), który jednocześnie generuje sygnały elektryczne i mierzy reakcje badanych komponentów. Zintegrowanie tych funkcji w jednym urządzeniu zapewnia nie tylko uproszczenie procesu badawczego, ale także wyjątkową dokładność pomiarów, rzędów nanoamperów. Precyzyjne mikromanipulatory, platforma pomiarowa oraz wsparcie technologii mikroskopowych czynią z tego urządzenia wszechstronne narzędzie dla bardzo dokładnych pomiarów elektrycznych w mikrostrukturach."
           },
           "ai": {
             "title": "AI w Ochronie Zdrowia",
