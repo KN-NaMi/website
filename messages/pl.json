@@ -82,25 +82,11 @@
             "fullDescription": "Kluczowym elementem systemu są precyzyjne ostrza pomiarowe – cienkie kontakty igłowe umożliwiające kontakt z badanym obiektem na poziomie mikrometrowym. Stanowisko wykorzystuje zasilacz SMU (Source Measure Unit), który jednocześnie generuje sygnały elektryczne i mierzy reakcje badanych komponentów. Zintegrowanie tych funkcji w jednym urządzeniu zapewnia nie tylko uproszczenie procesu badawczego, ale także wyjątkową dokładność pomiarów, rzędów nanoamperów. Precyzyjne mikromanipulatory, platforma pomiarowa oraz wsparcie technologii mikroskopowych czynią z tego urządzenia wszechstronne narzędzie dla bardzo dokładnych pomiarów elektrycznych w mikrostrukturach."
           },
           "ai": {
-            "title": "AI w Ochronie Zdrowia",
-            "description": "Zastosowanie sztucznej inteligencji do poprawy diagnostyki medycznej i opieki nad pacjentem.",
-            "fullDescription": "Nasz projekt AI w ochronie zdrowia wykorzystuje techniki uczenia maszynowego i głębokiego uczenia do usprawnienia analizy obrazów medycznych, przewidywania progresji chorób i wspomagania planowania spersonalizowanego leczenia. Współpracujemy z profesjonalistami medycznymi, aby zapewnić realny wpływ naszych rozwiązań."
-          },
-          "nano": {
-            "title": "Innowacje w Nanotechnologii",
-            "description": "Rozwój nauki o materiałach w nanoskali w celu tworzenia rewolucyjnych nowych produktów.",
-            "fullDescription": "Nasze badania nad nanotechnologią koncentrują się na opracowywaniu nowych materiałów i zastosowań na poziomie molekularnym, umożliwiając przełomy w medycynie, elektronice i ochronie środowiska."
-          },
-          "space": {
-            "title": "Technologie Eksploracji Kosmosu",
-            "description": "Rozwój statków kosmicznych nowej generacji i systemów napędowych do podróży międzyplanetarnych.",
-            "fullDescription": "Pracujemy nad innowacyjnymi technologiami napędowymi i projektami statków kosmicznych, aby umożliwić głębszą eksplorację kosmosu i poszerzyć nasze rozumienie kosmosu."
-          },
-          "biotech": {
-            "title": "Przełomy w Biotechnologii",
-            "description": "Wykorzystanie potencjału biologii do rozwiązywania globalnych wyzwań w zdrowiu i rolnictwie.",
-            "fullDescription": "Nasze badania biotechnologiczne mają na celu opracowanie nowych rozwiązań dla ochrony zdrowia, rolnictwa i wyzwań środowiskowych poprzez innowacyjne podejścia biologiczne."
+            "title": "Inteligentna laska dla osób niewidomych i niedowidzących",
+            "description": "Projekt skupiający się na integracji algorytmów przetwarzania sygnałów z czujników i ich analizy w celu poprawy bezpieczeństwa i jakości życia osób z dysfunkcjami wzroku",
+            "fullDescription": "Brak opisu [PLACEHOLDER]."
           }
+          
         },
         "learnMore": "Dowiedz się więcej"
       },

@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: "energy",
-    image: "/placeholder.svg?height=600&width=600",
+    image: "/images/SPomiarowe.jpg",
     learnMoreLink: "/projects/2"
   },
   {
