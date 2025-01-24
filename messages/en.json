@@ -84,23 +84,9 @@
         "ai": {
           "title": "Smart cane for the blind and visually impaired",
           "description": "Project focusing on integration of sensor signal processing and analysis algorithms to improve safety and quality of life for visually impaired people",
-          "fullDescription": "[placeholder]"
-        },
-        "nano": {
-          "title": "Nanotechnology Innovations",
-          "description": "Advancing materials science at the nanoscale to create revolutionary new products.",
-          "fullDescription": "Our nanotechnology research focuses on developing new materials and applications at the molecular level, enabling breakthroughs in medicine, electronics, and environmental protection."
-        },
-        "space": {
-          "title": "Space Exploration Technologies",
-          "description": "Developing next-generation spacecraft and propulsion systems for interplanetary travel.",
-          "fullDescription": "We're working on innovative propulsion technologies and spacecraft designs to enable deeper space exploration and advance our understanding of the cosmos."
-        },
-        "biotech": {
-          "title": "Biotechnology Breakthroughs",
-          "description": "Harnessing the power of biology to solve global challenges in health and agriculture.",
-          "fullDescription": "Our biotechnology research aims to develop new solutions for healthcare, agriculture, and environmental challenges through innovative biological approaches."
+          "fullDescription": "Our smart cane project is an initiative to support blind and visually impaired people through the use of advanced technologies. The device features pressure and proximity sensors to accurately detect whether the user is holding the cane, and algorithms to minimize false detections. An accelerometer and gyroscope will allow the device to recognize falls and pick up the cane based on changes in acceleration and angular velocity. The project will also use speech processing technology based on MFCC coefficients and lightweight neural network models, providing efficiency on devices with limited computing power. We plan to miniaturize the device and integrate it with a mobile application via Bluetooth to make the system more functional and ready for daily use."
         }
+        
       },
       "learnMore": "Learn More"
     },

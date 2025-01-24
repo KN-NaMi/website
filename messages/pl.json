@@ -84,7 +84,7 @@
           "ai": {
             "title": "Inteligentna laska dla osób niewidomych i niedowidzących",
             "description": "Projekt skupiający się na integracji algorytmów przetwarzania sygnałów z czujników i ich analizy w celu poprawy bezpieczeństwa i jakości życia osób z dysfunkcjami wzroku",
-            "fullDescription": "Brak opisu [PLACEHOLDER]."
+            "fullDescription": "Nasz projekt inteligentnej laski to inicjatywa wspierająca osoby niewidome i niedowidzące poprzez wykorzystanie zaawansowanych technologii. Urządzenie wyposażono w czujniki nacisku i zbliżeniowe do precyzyjnego wykrywania, czy użytkownik trzyma laskę, oraz algorytmy minimalizujące fałszywe detekcje. Akcelerometr i żyroskop pozwolą na rozpoznawanie upadków i podnoszenia laski bazując na  zmianach przyspieszenia i prędkości kątowej. Projekt będzie korzystać również z  technologii przetwarzania mowy opartej na współczynnikach MFCC i lekkich modelach sieci neuronowych, co zapewnia efektywność na urządzeniach o ograniczonej mocy obliczeniowej. Planujemy miniaturyzację urządzenia oraz integrację z aplikacją mobilną przez Bluetooth, aby uczynić system bardziej funkcjonalnym i gotowym do codziennego użytku."
           }
           
         },
