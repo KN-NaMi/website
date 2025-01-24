@@ -52,7 +52,7 @@
         },
         "team": {
           "title": "Nasz Zespół",
-          "description": "Nasza organizacja składa się z zaangażowanych studentów z różnych środowisk akademickich. Każdego semestru łączymy siły, aby przesuwać granice badań naukowych i innowacji. Poniżej możesz zobaczyć zdjęcia naszego zespołu z ostatnich semestrów.",
+          "description": "Nasza organizacja składa się z zaangażowanych studentów z różnych środowisk akademickich. W każdym semestrze łączymy siły, aby przesuwać granice i wyznaczać nowe cele. Poniżej możesz zobaczyć zdjęcia naszego zespołu z ostatnich semestrów.",
           "semesters": {
             "fall2023": "Jesień 2023",
             "spring2023": "Wiosna 2023",
@@ -156,7 +156,7 @@
       }
     },
     "footer": {
-        "description": "Rozwój nauki poprzez współpracę i badania studenckie",
+        "description": "Odkrywaj Mikro i Nanoświaty z NaMi",
         "navigation": "Nawigacja",
         "connectWithUs": "Połącz się z nami",
         "social": {
