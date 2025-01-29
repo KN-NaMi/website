@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		screens: {
-  			custom: '1175px'
+  			custom: '1220px'
   		},
   		colors: {
   			maincolor: '#081f3e',

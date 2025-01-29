@@ -10,63 +10,52 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { useState } from 'react'
 
 const projects = [
   {
-    id: "quantum",
-    image: "/placeholder.svg?height=600&width=600",
-    learnMoreLink: "/projects/1"
+    id: "photolithography",
+    image: "",
+    learnMoreLink: "/projects/photolithography"
   },
   {
-    id: "energy",
+    id: "measurement",
     image: "/images/SPomiarowe.jpg",
-    learnMoreLink: "/projects/2"
+    learnMoreLink: "/projects/measurement"
   },
   {
-    id: "ai",
-    image: "/placeholder.svg?height=600&width=600",
-    learnMoreLink: "/projects/3"
+    id: "smartcane",
+    image: "/projects/cane1.jpg",
+    learnMoreLink: "/projects/smartcane"
   },
-  {
-    id: "nano",
-    image: "/placeholder.svg?height=600&width=600",
-    learnMoreLink: "/projects/4"
-  },
-  {
-    id: "space",
-    image: "/placeholder.svg?height=600&width=600",
-    learnMoreLink: "/projects/5"
-  },
-  {
-    id: "biotech",
-    image: "/placeholder.svg?height=600&width=600",
-    learnMoreLink: "/projects/6"
-  },
-  {
-    id: "robotics",
-    image: "/placeholder.svg?height=600&width=600",
-    learnMoreLink: "/projects/7"
-  }
 ]
 
 export default function ProjectsAccordion() {
   const t = useTranslations()
+  const [activeProject, setActiveProject] = useState(projects[0].id)
+
+  const currentImage = projects.find(p => p.id === activeProject)?.image || projects[0].image
 
   return (
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 mx-auto container">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
-          <div className="flex items-center justify-center">
-            <div className="relative aspect-square w-full max-w-[600px]">
-              <div className="absolute inset-0 bg-gray-50 rounded-lg">
-                <Image
-                  src="/placeholder.svg?height=600&width=600"
-                  alt="Scientific research illustration"
-                  width={600}
-                  height={600}
-                  className="object-contain p-8"
-                />
-              </div>
+        <div className="flex items-center justify-center">
+            <div
+              className="relative bg-gray-50 rounded-lg flex items-center justify-center"
+              style={{
+                padding: 20,
+                maxWidth: "660px", 
+              }}
+            >
+              <Image
+                src={currentImage}
+                alt={t(`sections.projects.projects.${activeProject}.title`)}
+                width={600}
+                height={0}
+                className="object-contain max-w-[600px] w-full h-auto"
+                priority
+              />
             </div>
           </div>
           <div className="flex flex-col justify-center space-y-4">
@@ -79,7 +68,17 @@ export default function ProjectsAccordion() {
               </p>
             </div>
             <div className="max-h-[600px] overflow-y-auto pr-4">
-              <Accordion type="single" collapsible className="w-full">
+              <Accordion 
+                type="single" 
+                collapsible 
+                className="w-full"
+                defaultValue={projects[0].id}
+                onValueChange={(value) => {
+                  if (value) {
+                    setActiveProject(value)
+                  }
+                }}
+              >
                 {projects.map((project) => (
                   <AccordionItem key={project.id} value={project.id}>
                     <AccordionTrigger className="text-left text-lg font-semibold">
@@ -109,4 +108,3 @@ export default function ProjectsAccordion() {
     </section>
   )
 }
-

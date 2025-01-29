@@ -18,7 +18,8 @@
     },
     "sections": {
       "hero": {
-        "title": "Odkrywamy Mikro i Nanoświaty z NaMi",
+        "title1": "Odkrywaj Mikro-",
+        "title2": "i Nanoświat z NaMi",
         "description": "Poznaj fascynujący świat zjawisk mikroskopowych i nanoskali dzięki nowoczesnym badaniom i innowacjom.",
         "button": "Nasze Projekty",
         "backgroundAlt": "Tło Bohatera"
@@ -70,18 +71,24 @@
         "projectGallery": "Galeria Projektu",
         "projectCollaborators": "Współpracownicy Projektu",
         "projectSponsors": "Sponsorzy Projektu",
+        "projectAuthors": "Autorzy",
+        "roles": {
+          "projectLead": "Project Lead",
+          "softwareEngineer": "Software Engineer",
+          "hardwareEngineer": "Hardware Engineer"
+        },
         "projects": {
-          "quantum": {
+          "photolithography": {
             "title": "Stanowisko fotolitograficzne",
             "description": "Projekt realizowany we współpracy z uczelniami z Ameryki, obejmujący interdyscyplinarne dziedziny, takie jak elektronika, optyka, mechanika i programowanie.",
             "fullDescription": "Stanowisko do fotolitografii jest flagowym projektem naszego koła, ponieważ nie tylko idealnie wpisuje się w obszar naszych zainteresowań, ale również może stać się kluczowym narzędziem do dalszego rozwoju w kierunku mikrosystemów. Projekt ma umożliwiać tworzenie masek fotolitograficznych o rozdzielczości do 5 µm, stanowiących kluczowy element w wytwarzaniu mikrostruktur. Głównym elementem systemu będzie projektor wyposażony w źródło światła ultrafioletowego, które dzięki specjalistycznemu układowi optycznemu będzie odpowiednio skalowane i emitowane na przygotowane powierzchnie. Manipulatory o wysokiej dokładności dopełnią ten precyzyjny system. Stanowisko stanowić będzie doskonałe połączenie nowatorskiej myśli inżynierskiej i praktycznego podejścia do współczesnych wyzwań technologicznych."
           },
-          "energy": {
+          "measurement": {
             "title": "Stanowisko do pomiarów ostrzowych",
             "description": "Stanowisko do pomiarów ostrzowych to zaawansowane urządzenie pozwalające na szczegółową analizę właściwości elektrycznych półprzewodników, mikrostruktur oraz cienkowarstwowych materiałów.",
             "fullDescription": "Kluczowym elementem systemu są precyzyjne ostrza pomiarowe – cienkie kontakty igłowe umożliwiające kontakt z badanym obiektem na poziomie mikrometrowym. Stanowisko wykorzystuje zasilacz SMU (Source Measure Unit), który jednocześnie generuje sygnały elektryczne i mierzy reakcje badanych komponentów. Zintegrowanie tych funkcji w jednym urządzeniu zapewnia nie tylko uproszczenie procesu badawczego, ale także wyjątkową dokładność pomiarów, rzędów nanoamperów. Precyzyjne mikromanipulatory, platforma pomiarowa oraz wsparcie technologii mikroskopowych czynią z tego urządzenia wszechstronne narzędzie dla bardzo dokładnych pomiarów elektrycznych w mikrostrukturach."
           },
-          "ai": {
+          "smartcane": {
             "title": "Inteligentna laska dla osób niewidomych i niedowidzących",
             "description": "Projekt skupiający się na integracji algorytmów przetwarzania sygnałów z czujników i ich analizy w celu poprawy bezpieczeństwa i jakości życia osób z dysfunkcjami wzroku",
             "fullDescription": "Nasz projekt inteligentnej laski to inicjatywa wspierająca osoby niewidome i niedowidzące poprzez wykorzystanie zaawansowanych technologii. Urządzenie wyposażono w czujniki nacisku i zbliżeniowe do precyzyjnego wykrywania, czy użytkownik trzyma laskę, oraz algorytmy minimalizujące fałszywe detekcje. Akcelerometr i żyroskop pozwolą na rozpoznawanie upadków i podnoszenia laski bazując na  zmianach przyspieszenia i prędkości kątowej. Projekt będzie korzystać również z  technologii przetwarzania mowy opartej na współczynnikach MFCC i lekkich modelach sieci neuronowych, co zapewnia efektywność na urządzeniach o ograniczonej mocy obliczeniowej. Planujemy miniaturyzację urządzenia oraz integrację z aplikacją mobilną przez Bluetooth, aby uczynić system bardziej funkcjonalnym i gotowym do codziennego użytku."

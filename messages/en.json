@@ -18,7 +18,8 @@
   },
   "sections": {
     "hero": {
-      "title": "Exploring Micro and Nano Worlds with NaMi",
+      "title1": "Exploring Micro and Nano Worlds with NaMi",
+      "title2": "",
       "description": "Discover the fascinating world of microscopic and nanoscale phenomena through cutting-edge research and innovation.",
       "button": "Our Projects",
       "backgroundAlt": "Hero Background"
@@ -70,18 +71,27 @@
       "projectGallery": "Project Gallery",
       "projectCollaborators": "Project Collaborators",
       "projectSponsors": "Project Sponsors",
+      "projectAuthors": "Project Authors",
+      "roles": {
+        "leadResearcher": "Lead Researcher",
+        "researchAssistant": "Research Assistant",
+        "technicalAdvisor": "Technical Advisor",
+        "projectLead": "Project Lead",
+        "softwareEngineer": "Software Engineer",
+        "hardwareEngineer": "Hardware Engineer"
+      },
       "projects": {
-        "quantum": {
+        "photolithography": {
           "title": "Photolithography station",
           "description": "The project is being carried out in cooperation with universities in America, covering interdisciplinary fields such as electronics, optics, mechanics and programming.",
           "fullDescription": "The photolithography station is the flagship project of our Science Club, as it not only fits perfectly into our area of interest, but also has the potential to become a crucial part for further development towards microsystems. The project expects the creation of photolithographic masks with a resolution of up to 5 µm, a key element in the fabrication of microstructures. The main component of the system will be a projector equipped with a source of ultraviolet light, which, thanks to a specialized optical system, will be appropriately scaled and emitted onto prepared surfaces. High-accuracy manipulators will complete this precision system. The stand will be an excellent combination of innovative engineering thought and a practical approach to modern technological challenges."
         },
-        "energy": {
+        "measurement": {
           "title": "Point Probe Measumerment Station",
           "description": "Point Probe Measumerment Station is an advanced device that allows detailed analysis of the electrical properties of semiconductors, microstructures and thin-film materials.",
           "fullDescription": "A key component of the system are precision point probes - thin needle contacts that allow contact with the test object at the micrometer level. The bench uses an SMU (Source Measure Unit) power supply that simultaneously generates electrical signals and measures the responses of the components under test. Integrating these functions in a single unit not only ensures simplification of the testing process, but also exceptional measurement accuracy, orders of nanoampere. Precision micromanipulators, a measurement platform and support for microscopy technologies make this device a versatile tool for highly accurate electrical measurements in microstructures"
           },
-        "ai": {
+        "smartcane": {
           "title": "Smart cane for the blind and visually impaired",
           "description": "Project focusing on integration of sensor signal processing and analysis algorithms to improve safety and quality of life for visually impaired people",
           "fullDescription": "Our smart cane project is an initiative to support blind and visually impaired people through the use of advanced technologies. The device features pressure and proximity sensors to accurately detect whether the user is holding the cane, and algorithms to minimize false detections. An accelerometer and gyroscope will allow the device to recognize falls and pick up the cane based on changes in acceleration and angular velocity. The project will also use speech processing technology based on MFCC coefficients and lightweight neural network models, providing efficiency on devices with limited computing power. We plan to miniaturize the device and integrate it with a mobile application via Bluetooth to make the system more functional and ready for daily use."

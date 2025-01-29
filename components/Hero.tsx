@@ -11,11 +11,10 @@ export default function Hero() {
 
   return (
     <section className="w-full min-h-screen bg-white flex items-center relative">
-      {/* Mobile background image */}
       <div className="absolute inset-0 custom:hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-white/95 to-white/80 z-[1]" />
         <Image
-          src="/images/hero.png"
+          src="/images/hero.jpg"
           alt={t('sections.hero.backgroundAlt')}
           fill
           className="object-cover object-center"
@@ -24,9 +23,11 @@ export default function Hero() {
       </div>
 
       <div className="container px-4 md:px-6 py-32 relative z-10 mx-auto">
-        <div className="max-w-[640px] relative">
+        <div className="max-w-[620px] relative">
           <h1 className="text-[clamp(2rem,6vw,4.5rem)] font-bold leading-[1.1] tracking-tight text-[#081F3E] mb-8">
-            {t('sections.hero.title')}
+            {t('sections.hero.title1')}
+            <br />
+            {t('sections.hero.title2')}
           </h1>
           <p className="text-lg md:text-xl text-[#2D4565] mb-8 max-w-[540px]">
             {t('sections.hero.description')}
@@ -45,13 +46,12 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Desktop background image */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-100 hidden custom:block">
         <Image
-          src="/images/hero.png"
+          src="/images/hero.jpg"
           alt={t('sections.hero.backgroundAlt')}
           fill
-          className="object-cover object-[40%]"
+          className="object-cover object-[34%]"
           priority
         />
       </div>
