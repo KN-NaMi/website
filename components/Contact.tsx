@@ -35,7 +35,7 @@ export default function Contact() {
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="mb-14 text-center">
-          <span className="text-sm font-semibold text-gray-600">{t('sections.contact.subtitle')}</span>
+      
           <h2 className="mb-3 mt-1 text-balance text-3xl font-semibold md:text-4xl text-[#081F3E]">
             {t('sections.contact.title')}
           </h2>

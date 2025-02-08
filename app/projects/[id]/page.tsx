@@ -19,7 +19,7 @@ const projects = [
       { name: "Jane Smith", roleKey: "softwareEngineer", image: "" },
       { name: "Bob Wilson", roleKey: "hardwareEngineer", image: ""},
     ],
-    images: ["/placeholder.svg?height=600&width=800"],
+    images: [],
     collaborators: [
       { name: "HackerFab", logo: "/partners/hackerfab.avif", url: "https://hackerfab.ece.cmu.edu/#next" },
     ],
@@ -30,15 +30,20 @@ const projects = [
     id: "measurement",
     translationKey: "measurement",
     authors: [
+      { name: "Kacper Szafrański", roleKey: "projectLead", image: "" }
     ],
-    images: ["/placeholder.svg?height=600&width=800", "/placeholder.svg?height=600&width=800"],
+    images: [],
     collaborators: [],
     sponsors: [],
   },
   {
     id: "smartcane",
     translationKey: "smartcane",
-    authors: [],
+    authors: [{ name: "Jakub Klimkowski", roleKey: "projectLead", image: ""},
+      { name: "Kacper Szafrański", roleKey: "softwareEngineer", image: "" },
+      { name: "Paweł Wojeński", roleKey: "softwareEngineer", image: "" },
+      { name: "Maurycy Wesołowski", roleKey: "hardwareEngineer", image: ""},
+      { name: "Michał Kaproń", roleKey: "hardwareEngineer", image: ""},],
     images: [
       "/projects/cane1.jpg",
     ],

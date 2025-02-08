@@ -47,7 +47,7 @@
       "extendedAbout": {
         "title": "O Nas",
         "mission": {
-          "title": "Nasza Misja",
+          "title": "Nasz Cel",
           "description1": "Głównym celem koła jest wspieranie rozwoju wiedzy, zwiększanie zainteresowania tematyką półprzewodników, a także propagowanie zdobytej wiedzy wśród innych studentów i osób zainteresowanych tą dynamicznie rozwijającą się dziedziną.",
           "description2": "Nasi członkowie mają unikalną możliwość zgłębiania zagadnień związanych z półprzewodnikami, takich jak wytwarzanie struktur, ich analiza oraz praktyczne zastosowania w systemach elektronicznych."
         },
@@ -79,7 +79,7 @@
         },
         "projects": {
           "photolithography": {
-            "title": "Stanowisko fotolitograficzne",
+            "title": "Stanowisko do fotolitografii projekcyjnej",
             "description": "Projekt realizowany we współpracy z uczelniami z Ameryki, obejmujący interdyscyplinarne dziedziny, takie jak elektronika, optyka, mechanika i programowanie.",
             "fullDescription": "Stanowisko do fotolitografii jest flagowym projektem naszego koła, ponieważ nie tylko idealnie wpisuje się w obszar naszych zainteresowań, ale również może stać się kluczowym narzędziem do dalszego rozwoju w kierunku mikrosystemów. Projekt ma umożliwiać tworzenie masek fotolitograficznych o rozdzielczości do 5 µm, stanowiących kluczowy element w wytwarzaniu mikrostruktur. Głównym elementem systemu będzie projektor wyposażony w źródło światła ultrafioletowego, które dzięki specjalistycznemu układowi optycznemu będzie odpowiednio skalowane i emitowane na przygotowane powierzchnie. Manipulatory o wysokiej dokładności dopełnią ten precyzyjny system. Stanowisko stanowić będzie doskonałe połączenie nowatorskiej myśli inżynierskiej i praktycznego podejścia do współczesnych wyzwań technologicznych."
           },
@@ -98,7 +98,7 @@
         "learnMore": "Dowiedz się więcej"
       },
       "contact": {
-        "title": "Skontaktuj się z Naszym Zespołem",
+        "title": "Tu nas znajdziesz",
         "subtitle": "Znajdź nas",
         "description": "Chętnie się z Tobą skontaktujemy. Skorzystaj z jednego z tych kanałów.",
         "social": {
@@ -114,7 +114,7 @@
           },
           "email": {
             "label": "Email",
-            "description": "Skontaktuj się z nami",
+            "description": "Skontaktuj się z NaMi",
             "handle": "kn.nami@pwr.edu.pl"
           }
         }
