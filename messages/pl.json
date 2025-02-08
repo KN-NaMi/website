@@ -18,14 +18,15 @@
     },
     "sections": {
       "hero": {
-        "title": "Odkrywamy Mikro i Nanoświaty z NaMi",
+        "title1": "Odkrywaj Mikro-",
+        "title2": "i Nanoświat z NaMi",
         "description": "Poznaj fascynujący świat zjawisk mikroskopowych i nanoskali dzięki nowoczesnym badaniom i innowacjom.",
         "button": "Nasze Projekty",
         "backgroundAlt": "Tło Bohatera"
       },
       "about": {
         "title": "O nas",
-        "description": "Jesteśmy grupą zaangażowanych studentów-naukowców, którzy poświęcają się rozwojowi badań i innowacji. Nasza organizacja wspiera współpracę, zachęca do ciekawości i promuje doskonałość naukową wśród studentów różnych dyscyplin.",
+        "description": "Koło Naukowe NaMi to zrzeszenie studentów pasjonujących się Nano- i Mikroelektroniką, działające przy Katedrze Mikroelektroniki i Nanotechnologii Politechniki Wrocławskiej.",
         "button": "Dowiedz się więcej"
       },
       "scientificResources": {
@@ -37,22 +38,22 @@
       },
       "partners": {
         "title": "Nasi Partnerzy",
-        "subtitle": "Współpracujemy z wiodącymi instytucjami akademickimi i ośrodkami badawczymi, aby napędzać postęp naukowy."
+        "subtitle": "Zapraszamy  do współpracy  z Naszym kołem, aby wspólnie myśleć nad nowatorskimi projektami w obszarze półprzewodników i mikrostruktur, tworząc rozwiązania napędzające rozwój nowoczesnych technologii."
       },
       "sponsors": {
         "title": "Nasi Sponsorzy",
         "subtitle": "Jesteśmy wdzięczni naszym sponsorom, którzy wspierają nasze inicjatywy badawcze i innowacyjne."
       },
       "extendedAbout": {
-        "title": "O Studenckiej Organizacji Naukowej",
+        "title": "O Nas",
         "mission": {
-          "title": "Nasza Misja",
-          "description1": "Studencka Organizacja Naukowa jest dedykowana budowaniu społeczności młodych badaczy, innowatorów i entuzjastów nauki. Naszą misją jest zapewnienie platformy dla studentów do eksploracji ich naukowych zainteresowań, współpracy przy nowatorskich projektach i rozwijania umiejętności, które będą kształtować przyszłość odkryć naukowych.",
-          "description2": "Wierzymy w siłę współpracy interdyscyplinarnej i dążymy do stworzenia środowiska, w którym studenci z różnych dziedzin mogą się spotkać, aby stawić czoła złożonym wyzwaniom naukowym. Poprzez nasze projekty, warsztaty i wydarzenia, dążymy do zniwelowania przepaści między nauką akademicką a praktycznym zastosowaniem."
+          "title": "Nasz Cel",
+          "description1": "Głównym celem koła jest wspieranie rozwoju wiedzy, zwiększanie zainteresowania tematyką półprzewodników, a także propagowanie zdobytej wiedzy wśród innych studentów i osób zainteresowanych tą dynamicznie rozwijającą się dziedziną.",
+          "description2": "Nasi członkowie mają unikalną możliwość zgłębiania zagadnień związanych z półprzewodnikami, takich jak wytwarzanie struktur, ich analiza oraz praktyczne zastosowania w systemach elektronicznych."
         },
         "team": {
           "title": "Nasz Zespół",
-          "description": "Nasza organizacja składa się z zaangażowanych studentów z różnych środowisk akademickich. Każdego semestru łączymy siły, aby przesuwać granice badań naukowych i innowacji. Poniżej możesz zobaczyć zdjęcia naszego zespołu z ostatnich semestrów.",
+          "description": "Nasza organizacja składa się z zaangażowanych studentów z różnych środowisk akademickich. W każdym semestrze łączymy siły, aby przesuwać granice i wyznaczać nowe cele. Poniżej możesz zobaczyć zdjęcia naszego zespołu z ostatnich semestrów.",
           "semesters": {
             "fall2023": "Jesień 2023",
             "spring2023": "Wiosna 2023",
@@ -70,42 +71,34 @@
         "projectGallery": "Galeria Projektu",
         "projectCollaborators": "Współpracownicy Projektu",
         "projectSponsors": "Sponsorzy Projektu",
+        "projectAuthors": "Autorzy",
+        "roles": {
+          "projectLead": "Project Lead",
+          "softwareEngineer": "Software Engineer",
+          "hardwareEngineer": "Hardware Engineer"
+        },
         "projects": {
-          "quantum": {
-            "title": "Badania nad Komputerami Kwantowymi",
-            "description": "Eksploracja granic obliczeń kwantowych w celu rewolucjonizacji przetwarzania danych i kryptografii.",
-            "fullDescription": "Nasz projekt badawczy nad komputerami kwantowymi ma na celu opracowanie nowych algorytmów i rozwiązań sprzętowych, aby rozwinąć dziedzinę przetwarzania informacji kwantowej. Pracujemy nad poprawą czasów koherencji kubitów, technikami korekcji błędów i optymalizacją obwodów kwantowych."
+          "photolithography": {
+            "title": "Stanowisko do fotolitografii projekcyjnej",
+            "description": "Projekt realizowany we współpracy z uczelniami z Ameryki, obejmujący interdyscyplinarne dziedziny, takie jak elektronika, optyka, mechanika i programowanie.",
+            "fullDescription": "Stanowisko do fotolitografii jest flagowym projektem naszego koła, ponieważ nie tylko idealnie wpisuje się w obszar naszych zainteresowań, ale również może stać się kluczowym narzędziem do dalszego rozwoju w kierunku mikrosystemów. Projekt ma umożliwiać tworzenie masek fotolitograficznych o rozdzielczości do 5 µm, stanowiących kluczowy element w wytwarzaniu mikrostruktur. Głównym elementem systemu będzie projektor wyposażony w źródło światła ultrafioletowego, które dzięki specjalistycznemu układowi optycznemu będzie odpowiednio skalowane i emitowane na przygotowane powierzchnie. Manipulatory o wysokiej dokładności dopełnią ten precyzyjny system. Stanowisko stanowić będzie doskonałe połączenie nowatorskiej myśli inżynierskiej i praktycznego podejścia do współczesnych wyzwań technologicznych."
           },
-          "energy": {
-            "title": "Rozwiązania Energii Odnawialnej",
-            "description": "Rozwijanie innowacyjnych podejść do energii odnawialnej dla czystszej, bardziej ekologicznej przyszłości.",
-            "fullDescription": "W naszym projekcie energii odnawialnej skupiamy się na poprawie wydajności ogniw słonecznych, opracowywaniu nowych technologii magazynowania energii i tworzeniu inteligentnych rozwiązań sieciowych dla lepszej dystrybucji i zarządzania energią."
+          "measurement": {
+            "title": "Stanowisko do pomiarów ostrzowych",
+            "description": "Stanowisko do pomiarów ostrzowych to zaawansowane urządzenie pozwalające na szczegółową analizę właściwości elektrycznych półprzewodników, mikrostruktur oraz cienkowarstwowych materiałów.",
+            "fullDescription": "Kluczowym elementem systemu są precyzyjne ostrza pomiarowe – cienkie kontakty igłowe umożliwiające kontakt z badanym obiektem na poziomie mikrometrowym. Stanowisko wykorzystuje zasilacz SMU (Source Measure Unit), który jednocześnie generuje sygnały elektryczne i mierzy reakcje badanych komponentów. Zintegrowanie tych funkcji w jednym urządzeniu zapewnia nie tylko uproszczenie procesu badawczego, ale także wyjątkową dokładność pomiarów, rzędów nanoamperów. Precyzyjne mikromanipulatory, platforma pomiarowa oraz wsparcie technologii mikroskopowych czynią z tego urządzenia wszechstronne narzędzie dla bardzo dokładnych pomiarów elektrycznych w mikrostrukturach."
           },
-          "ai": {
-            "title": "AI w Ochronie Zdrowia",
-            "description": "Zastosowanie sztucznej inteligencji do poprawy diagnostyki medycznej i opieki nad pacjentem.",
-            "fullDescription": "Nasz projekt AI w ochronie zdrowia wykorzystuje techniki uczenia maszynowego i głębokiego uczenia do usprawnienia analizy obrazów medycznych, przewidywania progresji chorób i wspomagania planowania spersonalizowanego leczenia. Współpracujemy z profesjonalistami medycznymi, aby zapewnić realny wpływ naszych rozwiązań."
-          },
-          "nano": {
-            "title": "Innowacje w Nanotechnologii",
-            "description": "Rozwój nauki o materiałach w nanoskali w celu tworzenia rewolucyjnych nowych produktów.",
-            "fullDescription": "Nasze badania nad nanotechnologią koncentrują się na opracowywaniu nowych materiałów i zastosowań na poziomie molekularnym, umożliwiając przełomy w medycynie, elektronice i ochronie środowiska."
-          },
-          "space": {
-            "title": "Technologie Eksploracji Kosmosu",
-            "description": "Rozwój statków kosmicznych nowej generacji i systemów napędowych do podróży międzyplanetarnych.",
-            "fullDescription": "Pracujemy nad innowacyjnymi technologiami napędowymi i projektami statków kosmicznych, aby umożliwić głębszą eksplorację kosmosu i poszerzyć nasze rozumienie kosmosu."
-          },
-          "biotech": {
-            "title": "Przełomy w Biotechnologii",
-            "description": "Wykorzystanie potencjału biologii do rozwiązywania globalnych wyzwań w zdrowiu i rolnictwie.",
-            "fullDescription": "Nasze badania biotechnologiczne mają na celu opracowanie nowych rozwiązań dla ochrony zdrowia, rolnictwa i wyzwań środowiskowych poprzez innowacyjne podejścia biologiczne."
+          "smartcane": {
+            "title": "Inteligentna laska dla osób niewidomych i niedowidzących",
+            "description": "Projekt skupiający się na integracji algorytmów przetwarzania sygnałów z czujników i ich analizy w celu poprawy bezpieczeństwa i jakości życia osób z dysfunkcjami wzroku",
+            "fullDescription": "Nasz projekt inteligentnej laski to inicjatywa wspierająca osoby niewidome i niedowidzące poprzez wykorzystanie zaawansowanych technologii. Urządzenie wyposażono w czujniki nacisku i zbliżeniowe do precyzyjnego wykrywania, czy użytkownik trzyma laskę, oraz algorytmy minimalizujące fałszywe detekcje. Akcelerometr i żyroskop pozwolą na rozpoznawanie upadków i podnoszenia laski bazując na  zmianach przyspieszenia i prędkości kątowej. Projekt będzie korzystać również z  technologii przetwarzania mowy opartej na współczynnikach MFCC i lekkich modelach sieci neuronowych, co zapewnia efektywność na urządzeniach o ograniczonej mocy obliczeniowej. Planujemy miniaturyzację urządzenia oraz integrację z aplikacją mobilną przez Bluetooth, aby uczynić system bardziej funkcjonalnym i gotowym do codziennego użytku."
           }
+          
         },
         "learnMore": "Dowiedz się więcej"
       },
       "contact": {
-        "title": "Skontaktuj się z Naszym Zespołem",
+        "title": "Tu nas znajdziesz",
         "subtitle": "Znajdź nas",
         "description": "Chętnie się z Tobą skontaktujemy. Skorzystaj z jednego z tych kanałów.",
         "social": {
@@ -121,7 +114,7 @@
           },
           "email": {
             "label": "Email",
-            "description": "Skontaktuj się z nami",
+            "description": "Skontaktuj się z NaMi",
             "handle": "kn.nami@pwr.edu.pl"
           }
         }
@@ -170,7 +163,7 @@
       }
     },
     "footer": {
-        "description": "Rozwój nauki poprzez współpracę i badania studenckie",
+        "description": "Odkrywaj Mikro i Nanoświaty z NaMi",
         "navigation": "Nawigacja",
         "connectWithUs": "Połącz się z nami",
         "social": {

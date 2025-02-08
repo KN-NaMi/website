@@ -70,7 +70,7 @@ export default function Header() {
     setIsOpen(false)
   }
 
-  const handleLanguageChange = (langCode: string) => {
+  const handleLanguageChange = (langCode: 'en' | 'pl') => {
     setLanguage(langCode)
   }
 
@@ -109,7 +109,7 @@ export default function Header() {
               {languages.map((lang) => (
                 <DropdownMenuItem
                   key={lang.code}
-                  onClick={() => handleLanguageChange(lang.code)}
+                  onClick={() => handleLanguageChange(lang.code as 'en' | 'pl')}
                   className={language === lang.code ? "bg-accent" : ""}
                 >
                   {lang.name}
@@ -148,7 +148,7 @@ export default function Header() {
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
+                    onClick={() => handleLanguageChange(lang.code as 'en' | 'pl')}
                     className={`w-full text-left px-2 py-2 text-lg ${
                       language === lang.code 
                         ? "text-[#081F3E] bg-accent" 

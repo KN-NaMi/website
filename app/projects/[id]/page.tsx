@@ -1,76 +1,62 @@
-'use client'
+"use client"
 
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import Image from 'next/image'
+import { notFound } from "next/navigation"
+import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { useEffect } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import { Globe, ArrowRight } from 'lucide-react'
-import { useTranslations } from '@/hooks/useTranslations'
-import { useLanguageStore } from '@/lib/language'
-
+import { useEffect } from "react"
+import useEmblaCarousel from "embla-carousel-react"
+import { Globe, ArrowRight, UserCircle2 } from "lucide-react"
+import { useTranslations } from "@/hooks/useTranslations"
+import { useLanguageStore } from "@/lib/language"
 
 const projects = [
-  { 
-    id: 1, 
-    translationKey: 'quantum',
-    images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+  {
+    id: "photolithography",
+    translationKey: "photolithography",
+    authors: [
+      { name: "John Doe", roleKey: "projectLead", image: ""},
+      { name: "Jane Smith", roleKey: "softwareEngineer", image: "" },
+      { name: "Bob Wilson", roleKey: "hardwareEngineer", image: ""},
     ],
+    images: [],
     collaborators: [
-      { name: "University Research Lab", logo: "/placeholder.svg?height=80&width=180", url: "https://universityresearchlab.edu" },
-      { name: "Scientific Innovation Center", logo: "/placeholder.svg?height=80&width=180", url: "https://scienceinnovation.org" }
+      { name: "HackerFab", logo: "/partners/hackerfab.avif", url: "https://hackerfab.ece.cmu.edu/#next" },
     ],
     sponsors: [
-      { name: "TechCorp", logo: "/placeholder.svg?height=80&width=180", url: "https://techcorp.com" },
-      { name: "QuantumSys", logo: "/placeholder.svg?height=80&width=180", url: "https://quantumsys.com" }
     ],
-    learnMoreUrl: "https://example.com/quantum-research"
   },
-  { 
-    id: 2, 
-    translationKey: 'energy',
-    images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+  {
+    id: "measurement",
+    translationKey: "measurement",
+    authors: [
+      { name: "Kacper Szafrański", roleKey: "projectLead", image: "" }
     ],
-    collaborators: [
-      { name: "Global Science Institute", logo: "/placeholder.svg?height=80&width=180", url: "https://globalsci.org" }
-    ],
-    sponsors: [
-      { name: "EcoSolutions", logo: "/placeholder.svg?height=80&width=180", url: "https://ecosolutions.com" }
-    ],
-    learnMoreUrl: "https://example.com/quantum-research"
+    images: [],
+    collaborators: [],
+    sponsors: [],
   },
-  { 
-    id: 3, 
-    translationKey: 'ai',
+  {
+    id: "smartcane",
+    translationKey: "smartcane",
+    authors: [{ name: "Jakub Klimkowski", roleKey: "projectLead", image: ""},
+      { name: "Kacper Szafrański", roleKey: "softwareEngineer", image: "" },
+      { name: "Paweł Wojeński", roleKey: "softwareEngineer", image: "" },
+      { name: "Maurycy Wesołowski", roleKey: "hardwareEngineer", image: ""},
+      { name: "Michał Kaproń", roleKey: "hardwareEngineer", image: ""},],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "/projects/cane1.jpg",
     ],
-    collaborators: [
-      { name: "Advanced Research Consortium", logo: "/placeholder.svg?height=80&width=180", url: "https://advancedresearch.edu" },
-      { name: "International Science Alliance", logo: "/placeholder.svg?height=80&width=180", url: "https://intlscience.org" }
-    ],
-    sponsors: [
-      { name: "BioInnovate", logo: "/placeholder.svg?height=80&width=180", url: "https://bioinnovate.com" },
-      { name: "InnovateCo", logo: "/placeholder.svg?height=80&width=180", url: "https://innovateco.com" }
-    ],
-    learnMoreUrl: "https://example.com/quantum-research"
+    collaborators: [],
+    sponsors: [{ name: "STMicroelectronics", logo: "/sponsors/st.svg", url: "https://www.st.com" }],
   },
 ]
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.id === parseInt(params.id))
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+  const project = projects.find((p) => p.id === params.id)
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    align: "center"
+    align: "center",
   })
   const t = useTranslations()
   const { language, setLanguage } = useLanguageStore()
@@ -84,7 +70,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className="min-h-screen bg-white ">
+    <div className="min-h-screen bg-white">
       <main>
         <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 mx-auto container">
           <div className="container px-4 md:px-6 pt-8">
@@ -126,20 +112,47 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-20 bg-gray-50 ">
-          <div className="container px-4 md:px-6 mx-auto container">
+        <section className="w-full py-12 md:py-24 lg:py-20 bg-gray-50">
+          <div className="container px-4 md:px-6 mx-auto">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl text-[#081F3E] mb-4">
-              {t('sections.projects.projectDetails')}
+              {t("sections.projects.projectDetails")}
             </h2>
             <p className="text-gray-600 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-12">
               {t(`sections.projects.projects.${project.translationKey}.fullDescription`)}
             </p>
 
+            {project.authors && project.authors.length > 0 && (
+              <div className="mb-12">
+                <h3 className="text-xl font-semibold text-[#081F3E] mb-6">{t("sections.projects.projectAuthors")}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {project.authors.map((author, index) => (
+                    <div key={index} className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                      {author.image ? (
+                        <Image
+                          src={author.image || "/placeholder.svg"}
+                          alt={author.name}
+                          width={50}
+                          height={50}
+                          className="rounded-full"
+                        />
+                      ) : (
+                        <div className="w-[50px] h-[50px] flex items-center justify-center">
+                          <UserCircle2 className="w-12 h-12 text-gray-400" />
+                        </div>
+                      )}
+                      <div>
+                        <h4 className="font-medium text-[#081F3E]">{author.name}</h4>
+                        <p className="text-sm text-gray-500">{t(`sections.projects.roles.${author.roleKey}`)}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {project.images && project.images.length > 0 && (
               <div className="mb-12">
-                <h3 className="text-xl font-semibold text-[#081F3E] mb-6">
-                  {t('sections.projects.projectGallery')}
-                </h3>
+                <h3 className="text-xl font-semibold text-[#081F3E] mb-6">{t("sections.projects.projectGallery")}</h3>
                 <div className="relative">
                   <div className="overflow-hidden rounded-lg" ref={emblaRef}>
                     <div className="flex">
@@ -147,7 +160,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                         <div key={index} className="relative flex-[0_0_100%] min-w-0">
                           <div className="relative pt-[56.25%]">
                             <Image
-                              src={image}
+                              src={image || "/placeholder.svg"}
                               alt={`${t(`sections.projects.projects.${project.translationKey}.title`)} - Image ${index + 1}`}
                               fill
                               className="absolute inset-0 object-cover"
@@ -175,7 +188,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             {project.collaborators && project.collaborators.length > 0 && (
               <div className="mb-12">
                 <h3 className="text-xl font-semibold text-[#081F3E] mb-6">
-                  {t('sections.projects.projectCollaborators')}
+                  {t("sections.projects.projectCollaborators")}
                 </h3>
                 <div className="flex flex-wrap gap-8">
                   {project.collaborators.map((collaborator, index) => (
@@ -187,7 +200,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       className="flex items-center justify-center p-4 transition-colors"
                     >
                       <Image
-                        src={collaborator.logo}
+                        src={collaborator.logo || "/placeholder.svg"}
                         alt={collaborator.name}
                         width={180}
                         height={80}
@@ -201,9 +214,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
             {project.sponsors && project.sponsors.length > 0 && (
               <div>
-                <h3 className="text-xl font-semibold text-[#081F3E] mb-6">
-                  {t('sections.projects.projectSponsors')}
-                </h3>
+                <h3 className="text-xl font-semibold text-[#081F3E] mb-6">{t("sections.projects.projectSponsors")}</h3>
                 <div className="flex flex-wrap gap-8">
                   {project.sponsors.map((sponsor, index) => (
                     <a
@@ -214,7 +225,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       className="flex items-center justify-center p-4 transition-colors"
                     >
                       <Image
-                        src={sponsor.logo}
+                        src={sponsor.logo || "/placeholder.svg"}
                         alt={sponsor.name}
                         width={180}
                         height={80}
