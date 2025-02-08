@@ -4,6 +4,7 @@ import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useEffect } from 'react'
 import { useTranslations } from '@/hooks/useTranslations'
+import { motion } from 'framer-motion' // Import motion z framer-motion
 
 const partners = [
   { 
@@ -18,7 +19,7 @@ const partners = [
     name: "Wydział Elektroniki, Fotoniki i Mikrosystemów", 
     logo: "/sponsors/wefim.png", 
     url: "https://wefim.pwr.edu.pl/",
-    maxHeight: "5rem"
+    maxHeight: "6rem"
   },
   { 
     id: 3, 
@@ -40,6 +41,13 @@ const partners = [
     logo: "/sponsors/ansys.svg", 
     url: "https://www.ansys.com",
     maxHeight: "5rem"
+  },
+  { 
+    id: 6, 
+    name: "HackerFab", 
+    logo: "/partners/hackerfab.avif", 
+    url: "https://hackerfab.ece.cmu.edu/#next",
+    maxHeight: "5rem"
   }
 ]
 
@@ -57,7 +65,7 @@ export default function Partners() {
 
     const intervalId = setInterval(() => {
       emblaApi.scrollNext()
-    }, 2000)
+    }, 4000)
 
     return () => clearInterval(intervalId)
   }, [emblaApi])
@@ -68,7 +76,13 @@ export default function Partners() {
       className="w-full py-12 md:py-24 lg:py-32 bg-gray-50"
     >
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <motion.div
+          className="flex flex-col items-center justify-center space-y-4 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#081F3E]">
               {t('sections.partners.title')}
@@ -77,14 +91,24 @@ export default function Partners() {
               {t('sections.partners.subtitle')}
             </p>
           </div>
-        </div>
-        <div className="mt-12">
+        </motion.div>
+        <motion.div
+          className="mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+        >
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {partners.map((partner) => (
-                <div 
-                  key={partner.id} 
-                  className="flex-[0_0_50%] min-w-0 sm:flex-[0_0_33.33%] md:flex-[0_0_25%] lg:flex-[0_0_20%] px-4" 
+                <motion.div
+                  key={partner.id}
+                  className="flex-[0_0_50%] min-w-0 sm:flex-[0_0_33.33%] md:flex-[0_0_25%] lg:flex-[0_0_20%] px-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                  transition={{ duration: 1.2, ease: "easeOut" }}
                 >
                   <a
                     href={partner.url}
@@ -101,13 +125,12 @@ export default function Partners() {
                       style={{ maxHeight: partner.maxHeight }}
                     />
                   </a>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
 }
-

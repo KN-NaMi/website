@@ -4,6 +4,7 @@ import { Instagram, Facebook, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslations } from '@/hooks/useTranslations'
 import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion' // Import motion z framer-motion
 
 const contactInfo = [
   { 
@@ -34,20 +35,36 @@ export default function Contact() {
       )}
     >
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="mb-14 text-center">
-      
+        <motion.div
+          className="mb-14 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
           <h2 className="mb-3 mt-1 text-balance text-3xl font-semibold md:text-4xl text-[#081F3E]">
             {t('sections.contact.title')}
           </h2>
           <p className="text-lg text-gray-600">
             {t('sections.contact.description')}
           </p>
-        </div>
-        <div className="grid gap-10 md:grid-cols-3">
+        </motion.div>
+
+        <motion.div
+          className="grid gap-10 md:grid-cols-3"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+        >
           {contactInfo.map((item, index) => (
-            <div 
+            <motion.div
               key={item.type}
               className="flex flex-col items-center text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 + index * 0.2 }}
             >
               <span className="mb-3 flex size-12 items-center justify-center rounded-full bg-gray-100">
                 <item.icon className="h-6 w-auto text-[#081F3E]" />
@@ -66,11 +83,10 @@ export default function Contact() {
               >
                 {t(`sections.contact.social.${item.type}.handle`)}
               </Link>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
 }
-

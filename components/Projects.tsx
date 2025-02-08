@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Image as ImageIcon } from 'lucide-react'
 import { useTranslations } from '@/hooks/useTranslations'
 import {
   Accordion,
@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { useState } from 'react'
+import { motion } from 'framer-motion' 
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
   },
   {
     id: "measurement",
-    image: "/images/SPomiarowe.jpg",
+    image: "",
     learnMoreLink: "/projects/measurement"
   },
   {
@@ -40,34 +41,58 @@ export default function ProjectsAccordion() {
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 mx-auto container">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
-        <div className="flex items-center justify-center">
+          <motion.div
+            className="flex items-center justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
             <div
               className="relative bg-gray-50 rounded-lg flex items-center justify-center"
               style={{
                 padding: 20,
-                maxWidth: "660px", 
+                maxWidth: "660px",
               }}
             >
-              <Image
-                src={currentImage}
-                alt={t(`sections.projects.projects.${activeProject}.title`)}
-                width={600}
-                height={0}
-                className="object-contain max-w-[600px] w-full h-auto"
-                priority
-              />
+              {currentImage ? (
+                <Image
+                  src={currentImage}
+                  alt={t(`sections.projects.projects.${activeProject}.title`)}
+                  width={600}
+                  height={0}
+                  className="object-contain max-w-[600px] w-full h-auto"
+                  priority
+                />
+              ) : (
+                <div className="flex items-center justify-center h-full">
+                  <ImageIcon className="m-40 w-20 h-20 text-gray-300" />
+                </div>
+              )}
             </div>
-          </div>
+          </motion.div>
           <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
+            <motion.div
+              className="space-y-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+            >
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#081F3E]">
                 {t('sections.projects.title')}
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 {t('sections.projects.subtitle')}
               </p>
-            </div>
-            <div className="max-h-[600px] overflow-y-auto pr-4">
+            </motion.div>
+            <motion.div
+              className="max-h-[600px] overflow-y-auto pr-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
+            >
               <Accordion 
                 type="single" 
                 collapsible 
@@ -101,7 +126,7 @@ export default function ProjectsAccordion() {
                   </AccordionItem>
                 ))}
               </Accordion>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
